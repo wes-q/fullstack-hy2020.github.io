@@ -45,7 +45,7 @@
     "fullstack",
     "course",
     "helsingin yliopisto",
-    "tietojenkäsittelytieteen osasto",
+    "tietojenk\u00e4sittelytieteen osasto",
     "mooc",
     "mooc.fi",
     "full stack",
@@ -53,11 +53,11 @@
   ],
   "license": "Creative Commons BY-NC-SA 3.0",
   "scripts": {
-    "build": "gatsby build",
+    "build": "node api.js && gatsby build",
     "gatsby": "gatsby build",
     "develop": "gatsby develop",
     "clean": "gatsby clean",
-    "start": "npm run develop",
+    "start": "node api.js && npm run develop",
     "format": "prettier --write \"src/**/*.js\"",
     "deploy": "gatsby build && gh-pages -d public -b master",
     "publish": "gh-pages -u 'Matti Luukkainen <mluukkai@iki.fi>' -d public -b master"
